@@ -65,7 +65,9 @@ describe('NeonRealms API', () => {
         .get('/health')
         .set('Origin', 'http://localhost:3000');
 
-      expect(response.headers['access-control-allow-origin']).toBeDefined();
+      expect(response.headers['access-control-allow-origin']).toBe(
+        'http://localhost:3000'
+      );
     });
   });
 });

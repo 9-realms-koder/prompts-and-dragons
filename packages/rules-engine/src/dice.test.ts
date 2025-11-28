@@ -160,7 +160,7 @@ describe('roll', () => {
       mockRandom.mockRestore();
     });
 
-    it('should not detect critical on d20 with modifier', () => {
+    it('should detect critical on d20 even with modifier (natural roll)', () => {
       const mockRandom = vi.spyOn(Math, 'random').mockReturnValue(0.999);
 
       const result = roll('1d20+5');

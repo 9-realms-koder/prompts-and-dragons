@@ -15,9 +15,7 @@
     "dev": "tsc --watch",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "react": "^18.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@neonrealms/config": "*",
     "@types/react": "^18.2.0",

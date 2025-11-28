@@ -13,13 +13,15 @@ describe('Home Page', () => {
   it('should render the tagline', () => {
     render(<Home />);
 
-    expect(screen.getByText('RPG Assincrono com Mestre IA')).toBeInTheDocument();
+    expect(screen.getByText('RPG Assíncrono com Mestre IA')).toBeInTheDocument();
   });
 
   it('should render the description', () => {
     render(<Home />);
 
-    expect(screen.getByText(/Em um mundo onde a linha entre humano e maquina/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Em um mundo onde a linha entre humano e máquina/i)
+    ).toBeInTheDocument();
   });
 
   it('should render the create campaign button', () => {

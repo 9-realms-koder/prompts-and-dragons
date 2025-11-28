@@ -47,10 +47,19 @@ export function calculateExpForLevel(level: number): number {
   return level * 100;
 }
 
+export interface DerivedStats {
+  maxHP: number;
+  defense: number;
+  initiative: number;
+  meleeDamageModifier: number;
+  rangedDamageModifier: number;
+  expForNextLevel: number;
+}
+
 /**
  * Calculate derived stats from attributes
  */
-export function calculateDerivedStats(attributes: Attributes, level: number) {
+export function calculateDerivedStats(attributes: Attributes, level: number): DerivedStats {
   return {
     maxHP: calculateMaxHP(attributes.vitalidade, level),
     defense: calculateDefense(attributes.agilidade),

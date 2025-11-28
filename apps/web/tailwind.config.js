@@ -22,8 +22,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
-        display: ['Orbitron', 'sans-serif'],
+        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        display: ['var(--font-orbitron)', 'sans-serif'],
       },
     },
   },
