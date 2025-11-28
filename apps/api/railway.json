@@ -1,0 +1,14 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "cd ../.. && npm ci && npm run build --workspace=@neonrealms/api"
+  },
+  "deploy": {
+    "startCommand": "cd ../.. && npm run start --workspace=@neonrealms/api",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 30,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 3
+  }
+}
