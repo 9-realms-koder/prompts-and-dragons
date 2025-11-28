@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ["@neonrealms/config/eslint/base.js"],
+  extends: [require.resolve("@neonrealms/config/eslint/base.js")],
 };
