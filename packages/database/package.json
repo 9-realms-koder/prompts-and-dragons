@@ -1,0 +1,22 @@
+{
+  "name": "@neonrealms/database",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "echo 'TODO: prisma generate'",
+    "db:migrate": "echo 'TODO: prisma migrate'",
+    "db:studio": "echo 'TODO: prisma studio'"
+  },
+  "dependencies": {
+    "@neonrealms/types": "*"
+  },
+  "devDependencies": {
+    "@neonrealms/config": "*",
+    "typescript": "^5.3.0"
+  }
+}
